@@ -1,6 +1,7 @@
 import "../../../assets/styles/Services.css";
 import Image from "next/image";
 import Link from "next/link";
+import { GoArrowUpRight } from "react-icons/go";
 
 const services = [
   {
@@ -87,7 +88,7 @@ export default function Services() {
             <Link
               key={service?._id}
               href="/"
-              className={`service_card ${index == 1 && "active"}`}
+              className={`service_card ${index == 0 && "active"}`}
             >
               <Image
                 src={service?.icon}
@@ -96,16 +97,19 @@ export default function Services() {
                 width={50}
                 height={50}
               />
-              <h2 className="text-xl font-medium mb-2 mt-5">
-                {service?.title}
-              </h2>
-              <p className="text-[15px]">
-                {service?.description?.length > 80
-                  ? service?.description?.slice(0, 80) + "..."
-                  : service?.description}
-              </p>
-
-              <button>Read More</button>
+              <div>
+                <h2 className="text-2xl font-medium mb-2 mt-5">
+                  {service?.title}
+                </h2>
+                <p className="text-[15px]">
+                  {service?.description?.length > 100
+                    ? service?.description?.slice(0, 100) + "..."
+                    : service?.description}
+                </p>
+                <button className="mt-3 text-base-100 text-sm flex items-center gap-1">
+                  Read More <GoArrowUpRight />
+                </button>
+              </div>
             </Link>
           ))}
         </div>
