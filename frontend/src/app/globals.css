@@ -67,7 +67,6 @@
   }
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -110,9 +109,9 @@ button:focus {
   padding: 8px 16px;
   display: flex;
   align-items: center;
-  font-size: 14px;
   gap: 6px;
-
+  font-size: 15px;
+  width: max-content;
   transition: all 0.5s ease;
 }
 
@@ -128,13 +127,12 @@ button:focus {
   display: flex;
   align-items: center;
   gap: 6px;
-
+  font-size: 15px;
   transition: all 0.5s ease;
 }
 
 .secondary_btn:hover {
   background: var(--primary);
-  color: var(--secondary);
 }
 
 .bg_gradient {
@@ -166,8 +164,6 @@ input {
 input:focus-visible {
   box-shadow: none !important;
 }
-
-
 
 @layer base {
   * {

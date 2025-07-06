@@ -1,53 +1,115 @@
+import "../../../assets/styles/Services.css";
 import Image from "next/image";
+import Link from "next/link";
+
+const services = [
+  {
+    _id: 1,
+    title: "Web Development",
+    slug: "web-development",
+    description:
+      "Bangladesh has now become an emerging potential of high quality IT Services. Where lots of companies are serving web Development services.",
+    icon: "/services/web.webp",
+  },
+  {
+    _id: 2,
+    title: "App Development",
+    slug: "app-development",
+    description:
+      "Bangladesh has now become an emerging potential of high quality IT Services. Where lots of companies are serving web Development services.",
+    icon: "/services/web.webp",
+  },
+  {
+    _id: 3,
+    title: "Digital Marketing",
+    slug: "digital-marketing",
+    description:
+      "Bangladesh has now become an emerging potential of high quality IT Services. Where lots of companies are serving web Development services.",
+    icon: "/services/web.webp",
+  },
+  {
+    _id: 4,
+    title: "Videography Solution",
+    slug: "videography-solution",
+    description:
+      "Bangladesh has now become an emerging potential of high quality IT Services. Where lots of companies are serving web Development services.",
+    icon: "/services/web.webp",
+  },
+  {
+    _id: 5,
+    title: "UI-UX Design",
+    slug: "web-development",
+    description:
+      "Bangladesh has now become an emerging potential of high quality IT Services. Where lots of companies are serving web Development services.",
+    icon: "/services/web.webp",
+  },
+  {
+    _id: 6,
+    title: "Graphics Design",
+    slug: "app-development",
+    description:
+      "Bangladesh has now become an emerging potential of high quality IT Services. Where lots of companies are serving web Development services.",
+    icon: "/services/web.webp",
+  },
+  {
+    _id: 7,
+    title: "Content & Research",
+    slug: "digital-marketing",
+    description:
+      "Bangladesh has now become an emerging potential of high quality IT Services. Where lots of companies are serving web Development services.",
+    icon: "/services/web.webp",
+  },
+  {
+    _id: 8,
+    title: "Domain & Hosting",
+    slug: "videography-solution",
+    description:
+      "Bangladesh has now become an emerging potential of high quality IT Services. Where lots of companies are serving web Development services.",
+    icon: "/services/web.webp",
+  },
+];
 
 export default function Services() {
-  return <section className="pt-7 pb-10">
-    <div className="container">
-      <div className="grid grid-cols-7 items-start gap-10">
-      <div className="col-span-2">
-        <h1 className="text-4xl font-bold text-secondary">Our Services</h1>
-        <p className="mt-4 text-neutral-content">We are committed to digitalizing your business. We provide Integrated marketing company that delivers graphics, web, and marketing solutions for businesses of all sizes.</p>
-      </div>
+  return (
+    <section className="pb-10">
+      <div className="container">
+        <div className="text-center flex flex-col items-center justify-center md:w-3/5 mx-auto">
+          <h1 className="text-4xl font-bold text-secondary">Our Services</h1>
+          <p className="mt-3 text-[15px] text-neutral-content">
+            We are committed to digitalizing your business. We provide
+            Integrated marketing company that delivers graphics, web, and
+            marketing solutions for businesses.
+          </p>
+        </div>
 
-      <div className="col-span-5 grid gap-3 grid-cols-3 items-start" >
-        {/* Service Card */}
-        <div className="p-4 rounded-lg shadow-md h-[260px] bg-primary text-base-100 flex flex-col items-center justify-center text-center hover:bg-secondary duration-300">
-          <Image width={50} height={50} src="/web.png" alt="web" />
-          <h2 className="mt-3 text-[22px] font-semibold">Digital Marketing</h2>
-          <p className="mt-1.5 text-[15px]">Bangladesh has now become an emerging potential...</p>
-        </div>
-        {/* Service Card */}
-        <div className="p-4 rounded-lg shadow-md h-[260px] bg-secondary text-base-100 flex flex-col items-center justify-center text-center -mt-6 hover:bg-secondary duration-300">
-          <Image width={50} height={50} src="/web.png" alt="web" />
-          <h2 className="mt-3 text-[22px] font-semibold">Web Development</h2>
-          <p className="mt-1.5 text-[15px]">Bangladesh has now become an emerging potential...</p>
-        </div>
-        {/* Service Card */}
-        <div className="p-4 rounded-lg shadow-md h-[260px] bg-primary text-base-100 flex flex-col items-center justify-center text-center hover:bg-secondary duration-300">
-          <Image width={50} height={50} src="/web.png" alt="web" />
-          <h2 className="mt-3 text-[22px] font-semibold">Software Development</h2>
-          <p className="mt-1.5 text-[15px]">Bangladesh has now become an emerging potential...</p>
-        </div>
-        {/* Service Card */}
-        <div className="p-4 rounded-lg shadow-md h-[260px] bg-primary text-base-100 flex flex-col items-center justify-center text-center hover:bg-secondary duration-300">
-          <Image width={50} height={50} src="/web.png" alt="web" />
-          <h2 className="mt-3 text-[22px] font-semibold">Videography</h2>
-          <p className="mt-1.5 text-[15px]">Bangladesh has now become an emerging potential...</p>
-        </div>
-        {/* Service Card */}
-        <div className="p-4 rounded-lg shadow-md h-[260px] bg-primary text-base-100 flex flex-col items-center justify-center text-center -mt-6 hover:bg-secondary duration-300">
-          <Image width={50} height={50} src="/web.png" alt="web" />
-          <h2 className="mt-3 text-[22px] font-semibold">SEO</h2>
-          <p className="mt-1.5 text-[15px]">Bangladesh has now become an emerging potential...</p>
-        </div>
-        {/* Service Card */}
-        <div className="p-4 rounded-lg shadow-md h-[260px] bg-primary text-base-100 flex flex-col items-center justify-center text-center hover:bg-secondary duration-300">
-          <Image width={50} height={50} src="/web.png" alt="web" />
-          <h2 className="mt-3 text-[22px] font-semibold">UI-Ux Design</h2>
-          <p className="mt-1.5 text-[15px]">Bangladesh has now become an emerging potential...</p>
+        <div className="mt-8 grid gap-3 sm:grid-cols-2 md:grid-cols-4 items-start">
+          {services?.map((service, index) => (
+            <Link
+              key={service?._id}
+              href="/"
+              className={`service_card ${index == 1 && "active"}`}
+            >
+              <Image
+                src={service?.icon}
+                alt={service?.title}
+                className="w-14 h-14"
+                width={50}
+                height={50}
+              />
+              <h2 className="text-xl font-medium mb-2 mt-5">
+                {service?.title}
+              </h2>
+              <p className="text-[15px]">
+                {service?.description?.length > 80
+                  ? service?.description?.slice(0, 80) + "..."
+                  : service?.description}
+              </p>
+
+              <button>Read More</button>
+            </Link>
+          ))}
         </div>
       </div>
-      </div>
-    </div>
-  </section>;
+    </section>
+  );
 }
