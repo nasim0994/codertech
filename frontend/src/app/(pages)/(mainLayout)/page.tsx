@@ -3,6 +3,7 @@ import Services from "@/components/modules/home/Services";
 import About from "@/components/modules/home/About";
 import WhyChoose from "@/components/modules/home/WhyChoose";
 import Contact from "@/components/modules/home/Contact";
+import Cta from "@/components/modules/home/Cta";
 
 export default async function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default async function HomePage() {
       <About />
       <WhyChoose />
       <Contact />
+      <Cta />
     </>
   );
 }

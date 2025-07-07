@@ -17,7 +17,7 @@ export default function Contact() {
               Thank you for interest in our service. Please fil up the form
               below or email us.
             </p>
-            <div className="mt-8 flex flex-col gap-3 text-gray-300">
+            <div className="mt-8 flex flex-col gap-3 text-gray-300 text-[15px]">
               <div className="flex items-center gap-2">
                 <p>
                   <FiPhone />
@@ -70,14 +70,14 @@ export default function Contact() {
           </div>
 
           <div className="p-4 bg-base-100 rounded-xl">
-            <form className="mt-8 flex flex-col gap-4">
+            <form className="flex flex-col gap-4">
               <h2 className="text-[22px] font-semibold text-primary">
                 Get In Touch
               </h2>
               <input type="text" placeholder="Enter Name" />
               <input type="text" placeholder="Enter Number" />
               <input type="text" placeholder="Enter Subject" />
-              <textarea rows={5} placeholder="Type Message..."></textarea>
+              <textarea rows={4} placeholder="Type Message..."></textarea>
               <button className="primary_btn">Send Message</button>
             </form>
           </div>
