@@ -1,9 +1,9 @@
 import ServicesCom from "@/components/shared/main/ServicesCom";
 
-export default function Services() {
+export default function ServicesPage() {
   return (
-    <section className="pb-10">
-      <div className="container">
+    <section>
+      <div className={"service_page_banner"}>
         <div className="text-center flex flex-col items-center justify-center md:w-3/5 mx-auto">
           <h1 className="text-4xl font-bold text-secondary">Our Services</h1>
           <p className="mt-3 text-[15px] text-neutral-content">
@@ -12,7 +12,9 @@ export default function Services() {
             marketing solutions for businesses.
           </p>
         </div>
+      </div>
 
+      <div className="pb-10 container">
         <ServicesCom />
       </div>
     </section>

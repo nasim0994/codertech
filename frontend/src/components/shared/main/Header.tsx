@@ -86,16 +86,19 @@ export default function Header() {
                   <ActiveLink href="/">Home</ActiveLink>
                 </li>
                 <li>
-                  <ActiveLink href="/about">About me</ActiveLink>
+                  <ActiveLink href="/about-us">About Us</ActiveLink>
                 </li>
                 <li>
-                  <ActiveLink href="/projects">Projects</ActiveLink>
+                  <ActiveLink href="/services">Services</ActiveLink>
                 </li>
                 <li>
                   <ActiveLink href="/blogs">Blogs</ActiveLink>
                 </li>
+                {/*<li>*/}
+                {/*  <ActiveLink href="/career">Career</ActiveLink>*/}
+                {/*</li>*/}
                 <li>
-                  <ActiveLink href="/contact">Contact</ActiveLink>
+                  <ActiveLink href="/contact-us">Contact Us</ActiveLink>
                 </li>
               </ul>
             </nav>

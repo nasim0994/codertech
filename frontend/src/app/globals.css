@@ -187,3 +187,22 @@ select {
     @apply bg-background text-foreground;
   }
 }
+
+.about_wrap {
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("/about_bg.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.service_page_banner {
+  background-image: url("/service_bg.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
