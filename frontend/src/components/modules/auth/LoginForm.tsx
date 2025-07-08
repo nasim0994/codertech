@@ -1,8 +1,5 @@
 "use client";
-import { AiFillGithub } from "react-icons/ai";
-import { ImFacebook } from "react-icons/im";
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
   FormControl,
@@ -11,14 +8,12 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import Link from "next/link";
 import { useForm, FieldValues, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { loginZodValidation } from "./loginValidation";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
 import { useState } from "react";
-import { signIn } from "next-auth/react";
 
 export default function LoginForm() {
   const [showPass, setShowPass] = useState(false);
@@ -86,25 +81,6 @@ export default function LoginForm() {
           )}
         />
 
-        <div className="flex justify-between items-center text-xs">
-          <div className="flex items-center space-x-2">
-            <Checkbox id="remember" className="w-3.5 h-3.5" />
-            <label
-              htmlFor="remember"
-              className="text-[13px] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-            >
-              Remember me
-            </label>
-          </div>
-
-          <Link
-            href="/forgot-password"
-            className="text-neutral-content hover:underline"
-          >
-            Forgot password?
-          </Link>
-        </div>
-
         <Button
           type="submit"
           className="w-full rounded-full bg-primary text-base-100"
@@ -112,33 +88,6 @@ export default function LoginForm() {
           Sign In
         </Button>
       </form>
-
-      <div className="flex flex-col gap-3 mt-5">
-        <p className="text-sm text-center text-neutral">Or Sign In with</p>
-
-        <div className="flex item-center justify-center gap-2">
-          <button
-            onClick={() =>
-              signIn("github", {
-                callbackUrl: "",
-              })
-            }
-            className="w-10 h-10 rounded-full border-2 border-gray-100 flex items-center justify-center"
-          >
-            <AiFillGithub className="text-xl" />
-          </button>
-          <button className="w-10 h-10 rounded-full border-2 border-gray-100 flex items-center justify-center">
-            <ImFacebook className="text-lg text-blue-600" />
-          </button>
-        </div>
-      </div>
-
-      <div className="mt-4 flex items-center justify-center text-xs gap-1">
-        <p className="text-neutral-content">Already have an account?</p>
-        <Link href="/register" className="text-neutral font-semibold">
-          Sign Up
-        </Link>
-      </div>
     </Form>
   );
 }

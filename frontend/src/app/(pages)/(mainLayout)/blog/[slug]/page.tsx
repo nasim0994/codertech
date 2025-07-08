@@ -19,7 +19,7 @@ export default function BlogDetailsPage() {
               <div className={"flex items-center gap-2"}>Share:</div>
             </div>
 
-            <h2 className={"mt-4 text-2xl font-bold text-neutral"}>
+            <h2 className={"mt-4 text-3xl font-bold text-neutral"}>
               Is Youtube Considered Social Media? A Complete Breakdown
             </h2>
 
