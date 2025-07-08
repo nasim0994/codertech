@@ -12,8 +12,8 @@ export default function Footer() {
   return (
     <footer className="footer_wrap">
       <div className="container">
-        <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-10">
-          <div className="md:col-span-2">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10">
+          <div className="lg:col-span-2">
             <Link href={"/"}>
               {/*<Image width={230} height={200} src="/logo.png" alt="logo" />*/}
               <h2 className={"text-3xl font-bold"}>eManager</h2>
