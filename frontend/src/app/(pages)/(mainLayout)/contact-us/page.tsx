@@ -7,6 +7,11 @@ import { RiInstagramFill } from "react-icons/ri";
 import WhyChooseCom from "@/components/shared/main/WhyChooseCom";
 import CtaCom from "@/components/shared/main/CtaCom";
 
+export const metadata = {
+    title: "Contact Us | CoderTech",
+    description: "We help businesses grow with modern software, web, and marketing solutions. Partner with CoderTech for your digital transformation.",
+};
+
 export default function ContactPage() {
   return (
     <section className="py-10">

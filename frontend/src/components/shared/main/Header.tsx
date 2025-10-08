@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
 import ActiveLink from "../ActiveLink";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
@@ -59,8 +59,7 @@ export default function Header() {
       <div className="container">
         <div className="flex items-center justify-between">
           <Link href="/">
-            {/* <Image width={200} height={50} src="/logo.png" alt="logo" /> */}
-            <h2>eManager</h2>
+             <Image width={200} height={50} src="/logo-white.png" alt="logo" />
           </Link>
 
           <div>

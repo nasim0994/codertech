@@ -1,5 +1,10 @@
 import ServicesCom from "@/components/shared/main/ServicesCom";
 
+export const metadata = {
+    title: "Services | CoderTech",
+    description: "We help businesses grow with modern software, web, and marketing solutions. Partner with CoderTech for your digital transformation.",
+};
+
 export default function ServicesPage() {
   return (
     <section>

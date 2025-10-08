@@ -21,20 +21,15 @@ export default function Hero() {
             </div>
 
             <h3 className="w-max rounded-xl bg-base-100/10 px-3 py-1 text-xs text-base-100">
-              MERN/PERN Stack Developer
+                🧩 Smart Software, Smarter Business.
             </h3>
 
             <h2 className="my-4 text-2xl font-bold sm:text-5xl">
-              We are experienced, you will definitely win. Manage your business
-              like a pro
+                Empowering Businesses with Intelligent Software Solutions
             </h2>
 
             <p className="text-sm text-gray-400">
-              eManager is a leading digital solutions company, specializing in
-              website and app development, software development, and total
-              digital marketing strategies. We are committed to helping
-              businesses establish a strong online presence and achieve their
-              digital goals.
+                We empower businesses to grow and scale through custom software solutions built with precision and innovation. Our expert team develops secure, high-performance web and mobile applications that streamline workflow, enhance customer engagement, and deliver measurable results for sustainable digital success.
             </p>
 
             <div className="mt-6 flex gap-3">

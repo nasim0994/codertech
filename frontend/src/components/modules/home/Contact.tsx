@@ -5,6 +5,7 @@ import { FiPhone } from "react-icons/fi";
 import Link from "next/link";
 import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Contact() {
   return (
@@ -22,21 +23,21 @@ export default function Contact() {
                 <p>
                   <FiPhone />
                 </p>
-                <p>01711270465</p>
+                <p>+880 1531-714355</p>
               </div>
 
               <div className="flex items-center gap-2">
                 <p>
                   <FaWhatsapp />
                 </p>
-                <p>+8801711270465</p>
+                <p>+880 1531-714355</p>
               </div>
 
               <div className="flex items-center gap-2">
                 <p>
                   <MdOutlineMail />
                 </p>
-                <p>emanagerit@gmail.com</p>
+                <p>codertechltd@gmail.com</p>
               </div>
 
               <div className="flex items-center gap-2">
@@ -44,8 +45,7 @@ export default function Contact() {
                   <IoLocationOutline />
                 </p>
                 <p>
-                  House:- 05, Road:- 2/D, Block:- J , Baridhara, Gulshan,
-                  Dhaka-1212, Bangladesh.
+                    Plot 98/100, Road 10, Block C, Niketan, Dhaka 1212
                 </p>
               </div>
             </div>
@@ -53,17 +53,20 @@ export default function Contact() {
             <div className="mt-12">
               <h2>Follow Us</h2>
               <div className="mt-3 flex items-center gap-3">
-                <Link href={""}>
+                <Link href={"https://www.facebook.com/codertechltd"} target="_blank">
                   <FaFacebook className="text-2xl" />
                 </Link>
-                <Link href={""}>
+                <Link href={"https://www.instagram.com/codertechltd"} target="_blank">
                   <RiInstagramFill className="text-[27px]" />
                 </Link>
-                <Link href={""}>
+                <Link href={"https://www.linkedin.com/company/codertechltd"} target="_blank">
                   <FaLinkedin className="text-2xl" />
                 </Link>
-                <Link href={""}>
+                <Link href={"https://www.youtube.com/@codertechltd"} target="_blank">
                   <FaYoutube className="text-[28px]" />
+                </Link>
+                  <Link href={"https://x.com/codertechltd"} target="_blank">
+                  <FaXTwitter className="text-2xl" />
                 </Link>
               </div>
             </div>

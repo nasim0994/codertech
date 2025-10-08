@@ -3,6 +3,11 @@ import AboutCom from "@/components/shared/main/AboutCom";
 import WhyChooseCom from "@/components/shared/main/WhyChooseCom";
 import CtaCom from "@/components/shared/main/CtaCom";
 
+export const metadata = {
+    title: "About Us | CoderTech",
+    description: "Learn more about CoderTech, the best software company in Bangladesh.",
+};
+
 export default function AboutPage() {
   return (
     <section className="py-10">

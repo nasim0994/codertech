@@ -26,7 +26,7 @@ export default function CtaCom() {
         </p>
         <div>
           <Link
-            href=""
+            href="/contact-us"
             className="bg_gradient px-6 py-2 rounded-full text-sm text-base-100"
           >
             Get Free Consultation

@@ -11,23 +11,14 @@ export default function AboutCom() {
       <div className="order-2 md:order-1">
         <p className="text-primary italic">-About Us-</p>
         <h2 className="text-3xl sm:text-4xl font-semibold text-neutral mt-2">
-          Empowering Efficiency, Unleashing Potential: Bridging Business with
-          3RT
+            Empowering Businesses with Innovative Software and Digital Marketing Solutions: Introducing CoderTech
         </h2>
         <div className="mt-4 text-neutral-content text-[15px] flex flex-col gap-4">
           <p>
-            Our commitment extends to serving a diverse clientele, spanning
-            major industries, reputable contractors, and seasoned traders across
-            the region. With a global reach, we facilitate the seamless trade of
-            materials sourced from every corner of the world.
+              Welcome to CoderTech, where we redefine excellence in software and digital marketing solutions, proudly serving the vibrant business landscape of Bangladesh. As a trusted industry leader, we are dedicated to delivering unparalleled results through a blend of creativity, technical prowess, and unwavering commitment to our clients success.
           </p>
           <p>
-            Founded and officially registered in 2012, 3RT Technologies has
-            spent the last nine years diligently building a solid foundation of
-            trust within the market. As a leading procurement service provider,
-            we specialize in a wide array of essential services, including
-            Sourcing, Purchasing, Logistics, C&F (Clearing and Forwarding), and
-            Warehousing.
+              At CoderTech, our team comprises seasoned professionals meticulously selected for their expertise in software development, design, and digital marketing strategy. With a focus on integrity and innovation, we craft bespoke solutions tailored to meet the unique needs of each client, ensuring maximum impact and sustainable growth.
           </p>
         </div>
         <div className="mt-6 grid grid-cols-2 gap-4">
@@ -36,7 +27,7 @@ export default function AboutCom() {
               <GiDuration className="text-3xl" />
             </div>
             <div>
-              <h2 className="text-bold text-xl">4+</h2>
+              <h2 className="text-bold text-xl">5+</h2>
               <p className="text-neutral-content text-sm">Successful Years</p>
             </div>
           </div>
@@ -45,7 +36,7 @@ export default function AboutCom() {
               <FaUsers className="text-2xl" />
             </div>
             <div>
-              <h2 className="text-bold text-xl">500+</h2>
+              <h2 className="text-bold text-xl">600+</h2>
               <p className="text-neutral-content text-sm">Happy Clients</p>
             </div>
           </div>
@@ -54,7 +45,7 @@ export default function AboutCom() {
               <SiTextpattern className="text-2xl" />
             </div>
             <div>
-              <h2 className="text-bold text-xl">50+</h2>
+              <h2 className="text-bold text-xl">30+</h2>
               <p className="text-neutral-content text-sm">IT Professionals</p>
             </div>
           </div>
