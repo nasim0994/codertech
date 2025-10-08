@@ -74,7 +74,8 @@ export async function generateMetadata({
       description: targetedBlog.shortDescription,
       images: [
         {
-          url: targetedBlog.thumbnail,
+          url: process.env.NEXT_PUBLIC_BASE_URL + targetedBlog.thumbnail,
+          alt: targetedBlog.title,
           width: 800,
           height: 600,
         },
@@ -85,7 +86,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: targetedBlog.title,
       description: targetedBlog.shortDescription,
-      images: [targetedBlog.thumbnail],
+      images: [process.env.NEXT_PUBLIC_BASE_URL + targetedBlog.thumbnail],
     },
   };
 }
